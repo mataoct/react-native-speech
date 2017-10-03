@@ -57,6 +57,7 @@ RCT_EXPORT_METHOD(stop)
 {
     if (self.synthesizer) {
         [self.synthesizer stopSpeakingAtBoundary:AVSpeechBoundaryImmediate];
+        self.synthesizer = nil;
     }
 }
 
